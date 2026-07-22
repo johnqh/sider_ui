@@ -1,5 +1,5 @@
 ---
-# CI/CD workflow for testomniac_ui
+# CI/CD workflow for sider_ui
 # Automatically publishes to NPM when NPM_TOKEN is configured
 
 name: CI/CD
