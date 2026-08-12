@@ -5,10 +5,10 @@ import { EmptyState, ErrorState, LoadingState } from '../components/states';
 import { DataTable } from '../components/data/DataTable';
 
 export function SitesPage() {
-  const { networkClient, baseUrl, token } = useSiderApi();
+  const { networkClient, baseUrl } = useSiderApi();
   const routes = useRoutes();
   const { navigate } = useSiderRouting();
-  const { data, isLoading, error } = useSites(networkClient, baseUrl, token);
+  const { data, isLoading, error } = useSites(networkClient, baseUrl);
 
   if (isLoading) return <LoadingState />;
   if (error) return <ErrorState error={error} />;

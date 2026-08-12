@@ -16,20 +16,20 @@ const TABS = ['templates', 'tools', 'slots', 'graph', 'ux'] as const;
 type Tab = (typeof TABS)[number];
 
 export function SiteDetailPage() {
-  const { networkClient, baseUrl, token } = useSiderApi();
+  const { networkClient, baseUrl } = useSiderApi();
   const { siteId } = useRouteParams<{ siteId?: string }>();
   const routes = useRoutes();
   const { navigate } = useSiderRouting();
   const [tab, setTab] = useState<Tab>('templates');
 
-  const site = useSite(networkClient, baseUrl, token, siteId ?? null);
-  const templates = useSiteTemplates(networkClient, baseUrl, token, siteId ?? null);
-  const catalog = useToolCatalog(networkClient, baseUrl, token, siteId ?? null, {
+  const site = useSite(networkClient, baseUrl, siteId ?? null);
+  const templates = useSiteTemplates(networkClient, baseUrl, siteId ?? null);
+  const catalog = useToolCatalog(networkClient, baseUrl, siteId ?? null, {
     includeProvisional: true,
     includeFlagged: true,
   });
-  const slots = useSiteSlots(networkClient, baseUrl, token, siteId ?? null);
-  const graph = useSiteGraph(networkClient, baseUrl, token, siteId ?? null);
+  const slots = useSiteSlots(networkClient, baseUrl, siteId ?? null);
+  const graph = useSiteGraph(networkClient, baseUrl, siteId ?? null);
 
   if (site.isLoading) return <LoadingState />;
   if (site.error) return <ErrorState error={site.error} />;

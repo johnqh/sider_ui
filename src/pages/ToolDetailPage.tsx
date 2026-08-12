@@ -5,9 +5,9 @@ import { EmptyState, ErrorState, LoadingState, StatusBadge } from '../components
 import { JsonViewer } from '../components/data/JsonViewer';
 
 export function ToolDetailPage() {
-  const { networkClient, baseUrl, token } = useSiderApi();
+  const { networkClient, baseUrl } = useSiderApi();
   const { toolId } = useRouteParams<{ toolId?: string }>();
-  const { data, isLoading, error } = useToolDetail(networkClient, baseUrl, token, toolId ?? null);
+  const { data, isLoading, error } = useToolDetail(networkClient, baseUrl, toolId ?? null);
 
   if (isLoading) return <LoadingState />;
   if (error) return <ErrorState error={error} />;
