@@ -8,8 +8,8 @@
         "@heroicons/react": "^2.2.0",
         "@sudobility/components": "^5.3.5",
         "@sudobility/design": "^1.1.47",
-        "@sudobility/sider_client": "^0.1.6",
-        "@sudobility/sider_types": "^0.0.10",
+        "@sudobility/sider_client": "^0.1.7",
+        "@sudobility/sider_types": "^0.0.11",
         "@sudobility/types": "^1.9.64",
         "@tanstack/react-query": "^5.90.5",
         "@types/react": "^18.3.12",
@@ -23,8 +23,8 @@
         "@heroicons/react": ">=2",
         "@sudobility/components": "^5.3.5",
         "@sudobility/design": "^1.1.47",
-        "@sudobility/sider_client": "^0.1.6",
-        "@sudobility/sider_types": "^0.0.10",
+        "@sudobility/sider_client": "^0.1.7",
+        "@sudobility/sider_types": "^0.0.11",
         "@sudobility/types": "^1.9.64",
         "@tanstack/react-query": ">=5",
         "react": ">=18",
@@ -193,9 +193,9 @@
 
     "@sudobility/design": ["@sudobility/design@1.1.47", "", { "peerDependencies": { "clsx": ">=2.0.0", "tailwind-merge": ">=2.0.0" } }, "sha512-QUAi0tht2EgIp5/4bIcXSw8uLlsM3DgHS9QZ1rHiykXerAJNwg/Odwi5NDdkb/j+nXAkp1xYXjbIiBpiqqAnjQ=="],
 
-    "@sudobility/sider_client": ["@sudobility/sider_client@0.1.6", "", { "peerDependencies": { "@sudobility/sider_types": "^0.0.10", "@sudobility/types": "^1.9.64", "@tanstack/react-query": "^5", "react": "^18 || ^19" } }, "sha512-wZqZ8idD7EKN43vVt8JvcNJG092EwwQOiDiheGjO/4+U2WDlVdsAv7vI3e8Tvz3mFEQK1C0ZK1zRdIAwwjHEGQ=="],
+    "@sudobility/sider_client": ["@sudobility/sider_client@0.1.7", "", { "peerDependencies": { "@sudobility/sider_types": "^0.0.11", "@sudobility/types": "^1.9.64", "@tanstack/react-query": "^5", "react": "^18 || ^19" } }, "sha512-SxPev80atzv+1+GxXqd38zRbDQja5uEZRZJC/qNHJ/OQnfzyx8vvd9a3S4Ab4kxq7qrQzstM4Iclu9glaMTw6g=="],
 
-    "@sudobility/sider_types": ["@sudobility/sider_types@0.0.10", "", {}, "sha512-U44+F3TFZaKuzJv/tlSHVCWcd/OFAuQ2Jen0mpgl1KNZHL2Y7hcohoPiAM3k8t20ewWKMN6HbsgNvnvd2bZSvw=="],
+    "@sudobility/sider_types": ["@sudobility/sider_types@0.0.11", "", {}, "sha512-mv1hKPILRqYYgaQl6Ijhkexnwkd51pgjOK+jl2AZyrS/BNKLsw4NZ4DcRZ7/jOhna7l1RWP6cL/onh89ZMRMDA=="],
 
     "@sudobility/types": ["@sudobility/types@1.9.64", "", {}, "sha512-fiOxOM1vNK2Vp5B324POcRhq6XOoeoHInP3GbvGPmn8MvsoAl0hgO2X4gJh2VZIybFZwIdE4SD0dO1vu/JgFSA=="],
 
