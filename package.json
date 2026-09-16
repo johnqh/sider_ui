@@ -1,6 +1,6 @@
 {
   "name": "@sudobility/sider_ui",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "Sider shared UI — dashboard pages and components for sider_app and sider_extension.",
   "license": "BUSL-1.1",
   "type": "module",
@@ -15,18 +15,18 @@
     "clean": "rm -rf dist",
     "prepublishOnly": "bun run clean && bun run build",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run --passWithNoTests",
-    "verify": "bun run typecheck && bun run test"
+    "test:unit": "vitest run --passWithNoTests",
+    "verify": "bun run typecheck && bun run test:unit"
   },
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
     "@heroicons/react": ">=2",
-    "@sudobility/components": "^5.3.17",
-    "@sudobility/design": "^1.1.52",
-    "@sudobility/sider_client": "^0.1.18",
-    "@sudobility/sider_types": "^0.0.15",
+    "@sudobility/components": "^5.3.20",
+    "@sudobility/design": "^1.1.54",
+    "@sudobility/sider_client": "^0.1.19",
+    "@sudobility/sider_types": "^0.0.16",
     "@sudobility/types": "^1.9.67",
     "@tanstack/react-query": ">=5",
     "react": ">=18",
@@ -34,10 +34,10 @@
   },
   "devDependencies": {
     "@heroicons/react": "^2.2.0",
-    "@sudobility/components": "^5.3.17",
-    "@sudobility/design": "^1.1.52",
-    "@sudobility/sider_client": "^0.1.18",
-    "@sudobility/sider_types": "^0.0.15",
+    "@sudobility/components": "^5.3.20",
+    "@sudobility/design": "^1.1.54",
+    "@sudobility/sider_client": "^0.1.19",
+    "@sudobility/sider_types": "^0.0.16",
     "@sudobility/types": "^1.9.67",
     "@tanstack/react-query": "^5.90.5",
     "@types/react": "^18.3.12",
